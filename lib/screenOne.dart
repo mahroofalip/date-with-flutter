@@ -15,9 +15,10 @@ class ScreenOne extends StatelessWidget {
             Text('Screen 1'),
             ElevatedButton(
                 onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(builder: (ctx) {
-                    return ScreenTwo();
-                  }));
+                  // Navigator.of(context).push(MaterialPageRoute(builder: (ctx) {
+                  //   return ScreenTwo();
+                  // }));
+                  Navigator.of(context).pushNamed('screen_2');
                 },
                 child: Text('Go to Screen 2'))
           ],
