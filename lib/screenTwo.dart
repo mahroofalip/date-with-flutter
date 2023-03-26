@@ -10,7 +10,14 @@ class ScreenTwo extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [ElevatedButton(onPressed: () {}, child: Text('Go back'))],
+          children: [
+            Text('Screen 2'),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+                child: Text('Go back'))
+          ],
         ),
       ),
     );
