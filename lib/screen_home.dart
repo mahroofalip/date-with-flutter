@@ -16,7 +16,7 @@ class _ScreenHomeState extends State<ScreenHome> {
     return Scaffold(
       appBar: AppBar(),
       body: Center(
-        child: Text(_counter.toString()),
+        child: DisplayText(CounterText: _counter.toString()),
       ),
       floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add),
@@ -27,5 +27,16 @@ class _ScreenHomeState extends State<ScreenHome> {
             });
           }),
     );
+  }
+}
+
+class DisplayText extends StatelessWidget {
+  final String CounterText;
+
+  const DisplayText({super.key, required this.CounterText});
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(CounterText);
   }
 }
