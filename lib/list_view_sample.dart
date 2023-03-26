@@ -20,8 +20,8 @@ class ListViewSample extends StatelessWidget {
                   leading: CircleAvatar(
                     radius: 30,
                     backgroundColor: Color.fromARGB(255, 25, 243, 137),
-                    backgroundImage: NetworkImage(
-                        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZbkS_XV1LPTGGZqqiTC9HSwBuMThVWBNv9w&usqp=CAU'),
+                    backgroundImage:
+                        AssetImage('assets/Images/1676305555606.jpg'),
                   ),
                   trailing: Text('1$index:00 PM'),
                 );
