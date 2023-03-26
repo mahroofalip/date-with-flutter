@@ -12,22 +12,14 @@ class ListViewSample extends StatelessWidget {
         title: const Text('List view sample project'),
       ),
       body: SafeArea(
-          child: ListView(
-        children: List.generate(
-          100,
-          (index) {
-            return Column(
-              children: [
-                Text('Text $index'),
-                Divider(
-                  height: 20,
-                  thickness: 2,
-                  color: Colors.green,
-                )
-              ],
-            );
-          },
-        ),
+          child: ListView.separated(
+        itemBuilder: (ctx, index) {
+          return Text('Text $index');
+        },
+        separatorBuilder: (ctx, index) {
+          return Divider();
+        },
+        itemCount: 50,
       )),
     );
   }
