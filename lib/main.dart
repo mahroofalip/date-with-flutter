@@ -14,14 +14,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(primarySwatch: Colors.green),
       home: ScreenOne(),
-      routes: {
-        'screen_1': (ctx) {
-          return ScreenOne();
-        },
-        'screen_2': (ctx) {
-          return ScreenTwo();
-        },
-      },
+      // routes: {
+      //   'screen_1': (ctx) {
+      //     return ScreenOne();
+      //   },
+      //   'screen_2': (ctx) {
+      //     return ScreenTwo();
+      //   },
+      // },
     );
   }
 }
